@@ -79,9 +79,6 @@ a {
 }
 /* Tab */
 @media (min-width: 700px) {
-  .hero-section {
-  }
-
   .row {
     width: 90%;
     max-width: 1265px;
