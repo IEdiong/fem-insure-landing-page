@@ -1,4 +1,9 @@
 /* variables */
+:root,
+html {
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-nav-link-padding-y: 0.5rem;
+}
 /* reset */
 *,
 *::before,
@@ -12,10 +17,10 @@
 body {
   font-family: 'Karla', sans-serif;
 }
-img {
+/* img {
   width: 100%;
   display: block;
-}
+} */
 
 ul {
   list-style: none;
@@ -54,6 +59,22 @@ a {
   white-space: nowrap;
   border: 0;
 }
+
+.navbar {
+  padding-block: 1.5rem;
+}
+
+.navbar-toggler {
+  padding: 0.2rem;
+  border: 1.8px solid #212529;
+  border-radius: 0;
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+}
+
 /* Mobile */
 .hero-section {
   background: hsl(256, 26%, 20%);
