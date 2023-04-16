@@ -1,8 +1,6 @@
 /* variables */
-:root,
-html {
-  --bs-navbar-nav-link-padding-x: 0.5rem;
-  --bs-navbar-nav-link-padding-y: 0.5rem;
+:root {
+  --dark-voilet: hsl(256, 26%, 20%);
 }
 /* reset */
 *,
@@ -38,7 +36,7 @@ a {
 
 /* Utility Classes */
 .container {
-  width: 90%;
+  width: 86%;
   max-width: 1265px;
   margin-inline: auto;
 }
@@ -60,6 +58,7 @@ a {
   border: 0;
 }
 
+/* Mobile */
 .navbar {
   padding-block: 1.5rem;
 }
@@ -75,29 +74,32 @@ a {
   height: 1.3em;
 }
 
-/* Mobile */
 .hero-section {
-  background: hsl(256, 26%, 20%);
+  background: var(--dark-voilet);
   color: white;
 }
 
-.hero-text {
-  padding: 4rem 0;
+.hero-content {
+  padding: 6rem 0;
   text-align: center;
 }
 
-.hero-text h1 {
+.hero-heading {
+  font-weight: 400;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
 }
 
-.hero-text a {
+.button {
   display: inline-block;
-
   color: white;
   border: 1px solid white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.8rem;
   margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: inherit;
 }
+
 /* Tab */
 @media (min-width: 700px) {
   .row {
