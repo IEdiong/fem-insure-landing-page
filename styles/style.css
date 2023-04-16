@@ -1,6 +1,13 @@
 /* variables */
 :root {
+  /* primary */
   --dark-voilet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* neutral */
+  --very-dark-voilet: hsl(270, 9%, 17%);
+  --dark-grayish-voilet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
 /* reset */
 *,
@@ -14,6 +21,7 @@
 /* base */
 body {
   font-family: 'Karla', sans-serif;
+  background: var(--very-light-gray);
 }
 /* img {
   width: 100%;
@@ -28,6 +36,7 @@ h1,
 h2,
 h3 {
   font-family: 'DM Serif Display', serif;
+  font-weight: 400;
 }
 
 a {
@@ -65,7 +74,7 @@ a {
 
 .navbar-toggler {
   padding: 0.2rem;
-  border: 1.8px solid #212529;
+  border: 1.8px solid var(--dark-voilet);
   border-radius: 0;
 }
 
@@ -85,9 +94,12 @@ a {
 }
 
 .hero-heading {
-  font-weight: 400;
   font-size: 2.8rem;
   margin-bottom: 1rem;
+}
+
+.hero-text {
+  color: var(--very-light-gray);
 }
 
 .button {
@@ -98,6 +110,52 @@ a {
   margin-top: 1rem;
   text-transform: uppercase;
   font-size: inherit;
+}
+
+.feature-section {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.feature-section h2 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  padding-block: 2.5rem;
+  position: relative;
+}
+
+.feature-section h2::before {
+  content: '';
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 1px;
+  background: var(--dark-grayish-voilet);
+  transform: translateX(-50%);
+}
+
+/* .feature-section .articles-container {
+} */
+
+.feature-section article {
+  margin-block-end: 4rem;
+}
+
+.feature-section article > * {
+  margin-block-end: 1rem;
+}
+
+.feature-section article > img {
+  margin-block-end: 1.8rem;
+}
+
+.feature-section article > h3 {
+  font-size: 1.7rem;
+}
+
+.feature-section article > p {
+  color: var(--dark-grayish-voilet);
 }
 
 /* Tab */
