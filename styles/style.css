@@ -21,7 +21,6 @@
 /* base */
 body {
   font-family: 'Karla', sans-serif;
-  background: var(--very-light-gray);
 }
 /* img {
   width: 100%;
@@ -68,6 +67,9 @@ a {
 }
 
 /* Mobile */
+.main {
+  padding-block-end: 8rem;
+}
 
 /* Navbar --- Start */
 .navbar {
@@ -119,7 +121,7 @@ a {
 
 /* Feature-Section ---- Start */
 .feature-section {
-  padding: 8rem 0 5rem;
+  padding: 8rem 0 3rem;
   text-align: center;
 }
 
@@ -175,7 +177,30 @@ a {
 .cta-section h2 {
   font-size: 2.3rem;
 }
+/* CTA-Section ---- End */
 
+/* Footer --- Start */
+.footer {
+  padding-block: 5rem;
+  background: var(--very-light-gray);
+  text-align: center;
+}
+
+.footer .socials__list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-block: 1.2rem;
+}
+
+.footer .secondary-nav {
+  border-top: 1px solid var(--dark-grayish-voilet);
+  padding-block-start: 3rem;
+}
+
+/* Footer --- End */
 /* Tab */
 @media (min-width: 700px) {
   .row {
