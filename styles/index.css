@@ -29,3 +29,60 @@ h2,
 h3 {
   font-family: 'DM Serif Display', serif;
 }
+
+img {
+  min-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Utility Styles */
+.container {
+  width: min(84%, 1110px);
+  margin-inline: auto;
+}
+
+/* Mobile Styles */
+/* Navbar */
+.navbar {
+  padding-block: 1.8rem;
+}
+
+.navbar-toggler {
+  border-radius: 0;
+  border: 2px solid hsl(273, 4%, 51%);
+  padding: 0.2rem 0.15rem;
+}
+
+/* Section - Intro */
+.section-intro {
+  background: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+}
+
+.section-intro__content {
+  padding-block: 5rem;
+}
+
+.section-intro__content h1 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-block-end: 1rem;
+}
+
+.section-intro__content p {
+  line-height: 1.7;
+}
+
+.cta {
+  text-transform: uppercase;
+  border: 1px solid hsl(0, 0%, 98%);
+  padding: 0.8rem 2rem;
+  margin-block-start: 2rem;
+}
