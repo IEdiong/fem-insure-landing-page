@@ -30,10 +30,10 @@ h3 {
   font-family: 'DM Serif Display', serif;
 }
 
-img {
+/* img {
   min-width: 100%;
   display: block;
-}
+} */
 
 a {
   text-decoration: none;
@@ -43,7 +43,7 @@ a {
 
 /* Utility Styles */
 .container {
-  width: min(84%, 1110px);
+  width: min(86%, 1110px);
   margin-inline: auto;
 }
 
@@ -66,6 +66,11 @@ a {
   text-align: center;
 }
 
+.section-intro__image img {
+  min-width: 100%;
+  display: inline-block;
+}
+
 .section-intro__content {
   padding-block: 5rem;
 }
@@ -85,4 +90,46 @@ a {
   border: 1px solid hsl(0, 0%, 98%);
   padding: 0.8rem 2rem;
   margin-block-start: 2rem;
+}
+
+/* Section - Features */
+.section-features {
+  padding-block-start: 7rem;
+  text-align: center;
+}
+
+.section-features h2 {
+  font-size: 3rem;
+  padding-block-start: 2rem;
+  position: relative;
+}
+
+/* Pseudo-elements */
+.section-features h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  transform: translateX(50%);
+  background: hsl(216, 30%, 68%);
+}
+
+.articles article {
+  margin-block-start: 4rem;
+}
+
+.articles img {
+  width: 86px;
+  aspect-ratio: 1/1;
+}
+
+.articles h3 {
+  margin-block: 1.3rem 0.8rem;
+  font-size: 1.8rem;
+}
+
+.articles p {
+  color: hsl(273, 4%, 51%);
+  line-height: 1.7;
 }
