@@ -10,6 +10,20 @@
 */
 
 /* Variables */
+:root {
+  /* Color primary */
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* Color secondary */
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  /* Font size */
+  --lg: 16px;
+  --xl: 20px;
+}
 /* Reset */
 *,
 *::before,
@@ -30,10 +44,9 @@ h3 {
   font-family: 'DM Serif Display', serif;
 }
 
-/* img {
-  min-width: 100%;
-  display: block;
-} */
+h2 {
+  font-size: 2.5rem;
+}
 
 a {
   text-decoration: none;
@@ -47,6 +60,13 @@ a {
   margin-inline: auto;
 }
 
+.cta {
+  text-transform: uppercase;
+  border: 2px solid var(--very-light-gray);
+  padding: 0.8rem 2rem;
+  margin-block-start: 2rem;
+}
+
 /* Mobile Styles */
 /* Navbar */
 .navbar {
@@ -55,14 +75,18 @@ a {
 
 .navbar-toggler {
   border-radius: 0;
-  border: 2px solid hsl(273, 4%, 51%);
+  border: 2px solid var(--dark-grayish-violet);
   padding: 0.2rem 0.15rem;
+}
+
+.main {
+  padding-block-end: 8rem;
 }
 
 /* Section - Intro */
 .section-intro {
-  background: hsl(256, 26%, 20%);
-  color: hsl(0, 0%, 98%);
+  background: var(--dark-violet);
+  color: var(--very-light-gray);
   text-align: center;
 }
 
@@ -85,21 +109,14 @@ a {
   line-height: 1.7;
 }
 
-.cta {
-  text-transform: uppercase;
-  border: 1px solid hsl(0, 0%, 98%);
-  padding: 0.8rem 2rem;
-  margin-block-start: 2rem;
-}
-
 /* Section - Features */
 .section-features {
   padding-block-start: 7rem;
+  padding-block-end: 5rem;
   text-align: center;
 }
 
 .section-features h2 {
-  font-size: 3rem;
   padding-block-start: 2rem;
   position: relative;
 }
@@ -109,10 +126,11 @@ a {
   content: '';
   position: absolute;
   top: 0;
+  left: 50%;
   width: 50%;
   height: 1px;
-  transform: translateX(50%);
-  background: hsl(216, 30%, 68%);
+  transform: translateX(-50%);
+  background: var(--grayish-blue);
 }
 
 .articles article {
@@ -130,6 +148,15 @@ a {
 }
 
 .articles p {
-  color: hsl(273, 4%, 51%);
+  color: var(--dark-grayish-violet);
   line-height: 1.7;
+}
+
+/* Section-CTA */
+.section-cta {
+  background: var(--dark-violet);
+  color: var(--very-light-gray);
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-block-start: 2rem;
 }
