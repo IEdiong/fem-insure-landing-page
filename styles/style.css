@@ -4,6 +4,9 @@
   --dark-voilet: hsl(256, 26%, 20%);
   --grayish-blue: hsl(216, 30%, 68%);
 
+  /* secondary */
+  --navy-blue: hsl(228, 45%, 44%);
+
   /* neutral */
   --very-dark-voilet: hsl(270, 9%, 17%);
   --dark-grayish-voilet: hsl(273, 4%, 51%);
@@ -40,6 +43,8 @@ h3 {
 
 a {
   text-decoration: none;
+  color: inherit;
+  font-weight: 700;
 }
 
 /* Utility Classes */
@@ -92,6 +97,15 @@ a {
 .hero-section {
   background: var(--dark-voilet);
   color: white;
+}
+
+.hero-image {
+  min-width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero-content {
@@ -181,7 +195,7 @@ a {
 
 /* Footer --- Start */
 .footer {
-  padding-block: 5rem;
+  padding-block-start: 5rem;
   background: var(--very-light-gray);
   text-align: center;
 }
@@ -198,11 +212,37 @@ a {
 .footer .secondary-nav {
   border-top: 1px solid var(--dark-grayish-voilet);
   padding-block-start: 3rem;
+  color: var(--dark-voilet) !important;
+  text-transform: uppercase;
+}
+
+.footer .secondary-nav p {
+  color: var(--dark-grayish-voilet);
+  font-weight: 700;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-block: 2rem 2rem;
+}
+
+.footer li {
+  margin-block-start: 1rem;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: var(--navy-blue);
 }
 
 /* Footer --- End */
 /* Tab */
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .row {
     width: 90%;
     max-width: 1265px;
@@ -213,5 +253,5 @@ a {
   .hero-image {
     order: 1;
   }
-}
+} */
 /* Desktop */
