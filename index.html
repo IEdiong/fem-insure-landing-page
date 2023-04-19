@@ -74,20 +74,27 @@
     </header>
     <main class="main">
       <section class="section-intro">
-        <div class="section-intro__image">
-          <img
-            src="./images/image-intro-mobile.jpg"
-            alt="family walking playfully down a path"
-          />
-        </div>
-        <div class="section-intro__content container px-0">
-          <h1>Humanizing your insurance.</h1>
-          <p>
-            Get your life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the plan that’s right for
-            you. Ensure you and your loved ones are protected.
-          </p>
-          <a class="cta" href="#">View plans</a>
+        <div class="section-wrapper">
+          <div class="section-intro__image">
+            <img
+              srcset="
+                ./images/image-intro-mobile.jpg  375w,
+                ./images/image-intro-desktop.jpg 540w
+              "
+              sizes="(max-width: 500px) 375px, 540px"
+              src="./images/image-intro-mobile.jpg"
+              alt="family walking playfully down a path"
+            />
+          </div>
+          <div class="section-intro__content container px-0">
+            <h1>Humanizing your insurance.</h1>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that&apos;s
+              right for you. Ensure you and your loved ones are protected.
+            </p>
+            <a class="cta" href="#">View plans</a>
+          </div>
         </div>
       </section>
       <section class="section-features container px-0">
