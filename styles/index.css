@@ -45,7 +45,7 @@ h3 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 6vw, 3.7rem);
 }
 
 a {
@@ -215,6 +215,24 @@ ul {
 
 /* Desktop Styles  */
 @media (min-width: 1440px) {
+  .section-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5rem;
+  }
+
+  .section-cta h2 {
+    text-align: left;
+    /* width: calc((1200px - 10rem) / 2); */
+    width: 50%;
+  }
+
+  .section-cta .cta {
+    margin-block-start: 0;
+  }
+
+  /* Footer */
   .footer {
     text-align: left;
   }
