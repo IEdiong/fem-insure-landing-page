@@ -20,9 +20,8 @@
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
 
-  /* Font size */
-  --lg: 16px;
-  --xl: 20px;
+  /* line width */
+  --line-width: 150px;
 }
 /* Reset */
 *,
@@ -215,6 +214,35 @@ ul {
 
 /* Desktop Styles  */
 @media (min-width: 1440px) {
+  /* Section-Features */
+  .section-features {
+    text-align: left;
+  }
+
+  /* Pseudo-elements */
+  .section-features h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--line-width);
+    height: 1px;
+    transform: translateX(0%);
+    background: var(--grayish-blue);
+  }
+
+  .articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-block-start: 3rem;
+  }
+
+  .articles article {
+    margin-block-start: 0;
+  }
+
+  /* Section-CTA */
   .section-cta {
     display: flex;
     align-items: center;
