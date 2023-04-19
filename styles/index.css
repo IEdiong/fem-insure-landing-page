@@ -326,6 +326,15 @@ ul {
     margin-block: 0;
   }
 
+  .footer .socials__list a > svg > path {
+    transition: fill ease-in-out 0.4s;
+  }
+
+  .footer .socials__list a:hover > svg > path,
+  .footer .socials__list a:focus > svg > path {
+    fill: var(--very-dark-violet);
+  }
+
   .footer nav {
     display: flex;
     margin-block-end: 3rem;
