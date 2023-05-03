@@ -71,7 +71,7 @@ ul {
 .cta {
   text-transform: uppercase;
   border: 2px solid var(--very-light-gray);
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 2rem !important;
   margin-block-start: 2rem;
 }
 
@@ -219,6 +219,17 @@ ul {
 @media (min-width: 1440px) {
   body {
     font-size: 1.125rem;
+  }
+
+  /* Navbar */
+  .navbar-nav {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cta--nav {
+    border-color: var(--dark-violet);
+    padding-block: 0.5rem !important;
   }
 
   /* Section-Intro */
